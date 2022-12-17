@@ -14,9 +14,10 @@ Linux or MacOS
 FUN=FUNCTION && mkdir src/$FUN && cd src
 ```
 where FUNCTION is the function name
+
 2. Copy the `cloudbuild.yaml` sample and `trigger.yaml` sample in `src` to subdirectory
 ```bash
 cp *.yaml $FUN
 ```
 
-#### Use [`storage/`](storage/) and [`helloworld/`](helloworld/) to update the created function directory
+#### Use [`storage/`](storage/) and [`helloworld/`](helloworld/) as a reference to update the created function directory
