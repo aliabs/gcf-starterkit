@@ -18,3 +18,5 @@ where FUNCTION is the function name
 ```bash
 cp *.yaml $FUN
 ```
+
+#### Use [`storage/`](storage/) and [`helloworld/`](helloworld/) to update the created function directory
