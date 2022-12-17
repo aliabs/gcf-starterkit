@@ -142,18 +142,16 @@ gcloud init && git config --global credential.https://source.developers.google.c
 4. Create the repository in Cloud Source Repositories:
 ```bash
 gcloud source repos create [REPO_NAME]
-gcloud source repos create gcf-starterkit
 ```
 
-4. Add your local repository as a remote:
+5. Add your local repository as a remote:
 ```bash
 git remote add google https://source.developers.google.com/p/[PROJECT_NAME]/r/[REPO_NAME]
-git remote add google https://source.developers.google.com/p/atn-web-app-dev/r/gcf-starterkit
 ```
 Where:
 [PROJECT_NAME] is the name of your Google Cloud project.
 [REPO_NAME] is the name of your repository.
-5. Push your code to Cloud Source Repositories:
+6. Push your code to Cloud Source Repositories:
 ```bash
 git push --all google
 ```
