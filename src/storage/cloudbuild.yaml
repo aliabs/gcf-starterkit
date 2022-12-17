@@ -1,0 +1,14 @@
+steps:
+  ## Deploy to Cloud Functions
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - functions
+      - deploy
+      - atn-storage
+      - --runtime=python310
+      - --source=src/storage
+      - --entry-point=hello_gcs
+      - --trigger-http
+      - --memory=128MB
+      - --allow-unauthenticated # TODO notify NB
+

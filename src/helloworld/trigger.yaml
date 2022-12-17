@@ -1,0 +1,8 @@
+filename: src/helloworld/cloudbuild.yaml
+includedFiles:
+- 'src/helloworld/**'
+name: 'tr-helloworld'
+triggerTemplate:
+  branchName: ^master$
+  projectId: atn-web-app-dev
+  repoName: gcf-starterkit

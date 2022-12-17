@@ -1,0 +1,13 @@
+steps:
+  ## Deploy to Cloud Functions
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - functions
+      - deploy
+      - atn-helloworld
+      - --runtime=python310
+      - --source=src/helloworld
+      - --entry-point=hello_get
+      - --trigger-http
+      - --memory=128MB
+      - --allow-unauthenticated # TODO notify NB

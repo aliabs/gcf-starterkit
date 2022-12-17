@@ -1,0 +1,11 @@
+filename: src/FUNCTION_SUB_DIR/cloudbuild.yaml
+includedFiles:
+- src/FUNCTION_SUB_DIR/**
+name: tr-FUNCTION_SUB_DIR
+triggerTemplate:
+  branchName: ^master$
+  projectId: atn-web-app-dev
+  repoName: gcf-starterkit
+
+
+

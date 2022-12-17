@@ -1,0 +1,8 @@
+filename: src/storage/cloudbuild.yaml
+includedFiles:
+- 'src/storage/**'
+name: 'tr-storage'
+triggerTemplate:
+  branchName: ^master$
+  projectId: atn-web-app-dev
+  repoName: gcf-starterkit

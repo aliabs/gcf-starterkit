@@ -1,0 +1,13 @@
+steps:
+  ## Deploy to Cloud Functions
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - functions
+      - deploy
+      - FUNCTION_SUB_DIR
+      - --runtime=python310
+      - --source=src/FUNCTION_SUB_DIR
+      - --entry-point= FUNCTION_SUB_DIR_FROM_MAIN
+      - --trigger-http
+      - --memory=128MB
+      - --allow-unauthenticated # TODO notify NB
